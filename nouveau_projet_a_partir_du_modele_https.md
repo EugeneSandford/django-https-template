@@ -18,25 +18,21 @@ Pour renommer correctement votre projet Django de **"htpps"** à **"blog"**, vou
 
 ### 2. **Modifier les fichiers de configuration Django**
 #### a. **Fichier `manage.py`**
-- Ouvrez `manage.py` et modifiez la ligne suivante :
-  ```python
-  os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'blog.settings')
-  ```
-  en :
+- Ouvrez `manage.py` et modifiez la ligne contenant 'https' en
   ```python
   os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'blog.settings')
   ```
 
 #### b. **Fichier `blog/settings.py`**
-- Ouvrez `blog/settings.py` (anciennement `blog/settings.py`).
+- Ouvrez `blog/settings.py`.
 - Modifiez les variables suivantes :
   ```python
-  ROOT_URLCONF = 'blog.urls'  # → 'blog.urls'
-  WSGI_APPLICATION = 'blog.wsgi.application'  # → 'blog.wsgi.application'
+  ROOT_URLCONF = 'https.urls'  # → 'blog.urls'
+  WSGI_APPLICATION = 'https.wsgi.application'  # → 'blog.wsgi.application'
   ```
 
 #### c. **Fichier `blog/urls.py`**
-- Ouvrez `blog/urls.py` (anciennement `blog/urls.py`).
+- Ouvrez `blog/urls.py`.
 - Vérifiez que le nom du module est cohérent (pas de référence directe au nom du projet ici, sauf si vous avez des imports personnalisés).
 
 ---
@@ -81,7 +77,7 @@ Pour renommer correctement votre projet Django de **"htpps"** à **"blog"**, vou
 - Si vous utilisez Git, assurez-vous de mettre à jour l’index et de commiter les changements :
   ```bash
   git add .
-  git commit -m "Renommage du projet de blog à blog"
+  git commit -m "Renommage du projet de https à blog"
   git push origin main
   ```
 
