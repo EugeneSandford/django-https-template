@@ -11,7 +11,7 @@ Pour renommer correctement votre projet Django de **"htpps"** à **"blog"**, vou
 - Le dossier principal de Django porte généralement le nom du projet (ici, `blog`).
 - Renommez-le en `blog` :
   ```bash
-  mv blog blog
+  mv https blog
   ```
 
 ---
