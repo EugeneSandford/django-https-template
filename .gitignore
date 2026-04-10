@@ -1,0 +1,33 @@
+# Environnements virtuels
+venv/
+.venv/
+env/
+
+# Fichiers Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Fichiers Django
+*.sqlite3
+db.sqlite3
+media/
+
+# Fichiers de configuration
+.env
+.env.local
+secrets.json
+local_settings.py
+
+# Fichiers de logs
+*.log
+logs/
+
+# Fichiers IDE
+.idea/
+.vscode/
+
+# Fichiers de build
+dist/
+build/
+*.egg-info/
